@@ -4,9 +4,9 @@ import { Box, Button, TextField, styled, Typography, paperClasses } from '@mui/m
 
 const Containers_image = styled('img')({
     width: '100%',
-    height: '100vh', // Ensure it takes full height for better overlay effect
+    height: '100vh', 
     opacity: 0.6,
-    position: 'relative', // Set relative positioning for the container image
+    position: 'relative', 
 });
 
 const Component = styled(Box)`
@@ -81,7 +81,7 @@ const Login = () => {
     }
 
     const onInputChange = (e) => {
-        setSignup.log({ ...signup, [e.target.name]: e.target.value });
+        setSignup({ ...signup, [e.target.name]: e.target.value });
     }
     return (
         <Box sx={{ position: 'relative', height: '100vh' }}>
@@ -91,7 +91,7 @@ const Login = () => {
                     <Image src={imageurl} alt="LOGIN image" />
                     {
                         account === 'login' ?
-                            <Wrapper>
+                            <Wrapper> 
                                 <TextField label="Email" onChange={(e) => onInputChange(e)} name='email' variant="standard" />
                                 <TextField label="Password" onChange={(e) => onInputChange(e)} name='password' variant="standard" />
                                 <LoginButton variant="contained">Login</LoginButton>
