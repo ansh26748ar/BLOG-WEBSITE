@@ -9,4 +9,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 In the server directory, you can run:
 ### `npm start`
 Runs the backend\
+conncets to the database
 At PORT NO 8000
